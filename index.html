@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Кожанные изделия: FOX HUNTER</title>
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/Styles.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e533d35e12.js" crossorigin="anonymous"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/JavaScript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="page-header">
+        <!-- page-nav -->
+        <nav class="page-nav navbar navbar-expand-lg fixed-top navbar-light bg-light shadow-lg" role="navigation">
+            <div class="container-fluid d-flex flex-row m-0 p-0">
+                <!-- site-logo -->
+                <a class="site-logo navbar-brand" href="#">
+                    <img class="img" src="source/images/info/logo/FHLogoDog.png" id="FHLogoDog" alt="FHLogo" title="Fox Hunter">
+                    <img class="img" src="source/images/info/logo/FHLogoName.png" id="FHLogoName" alt="FHLogo" title="Fox Hunter">
+                </a>
+                <!-- site-navigation -->
+                <div class="site-navigation container-fluid col-auto col-lg-9 align-self-stretch justify-content-around flex-lg-column mr-4 p-0">
+                    <!-- site-add-navigation -->
+                    <div class="site-add-navigation container-fluid justify-content-end">
+                        <ul class="navbar-nav ml-auto d-flex flex-row align-items-center">
+                            <div class="container d-none d-lg-inline-block">
+                                <div class="input-group" id="searchForm">
+                                    <input type="text" class="form-control" id="search" placeholder="Поиск" aria-label="Поиск" aria-describedby="button-addon">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary btn-sm" type="button" id="button-addon"><ion-icon name="search-outline" class="mt-1" size="small"></ion-icon></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown d-none d-sm-inline-block mb-lg-1 mx-2 mx-lg-0">
+                                <a class="nav-link" href="#" data-toggle="dropdown">RU</a>
+                                <div class="dropdown-menu m-0 p-0 ml-lg-2">
+                                    <a class="dropdown-item p-0" href="#">DE</a>
+                                </div>
+                            </div>
+                            <div class="dropdown d-none d-sm-inline-flex flex-wrap mx-sm-1 mx-lg-0" id="dropdownTeldiv">
+                                <a class="nav-link my-0" href="#" id="dropdownTel" data-toggle="dropdown"><i class="fontawesome-icon fas fa-phone"></i></a>
+                                <div class="dropdown-menu m-0 p-0" aria-labelledby="dropdownTel">
+                                    <a class="dropdown-item m-0 p-0" href="tel:+380...8">+380000000008</a>
+                                </div>
+                            </div>
+                            <div id="cart" class=" d-none d-sm-inline-block mx-sm-1 mx-lg-0">
+                                <a class="nav-link" href="#"><i class="fontawesome-icon fas fa-shopping-cart"></i></a>
+                            </div>
+                        </ul>
+                        <button type="button" class="navbar-toggler px-2 mx-3" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="sr-only">toggle navigation</span>
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <!-- site-navigation-listX -->
+                    <div class="site-navigation-listX container-fluid d-none d-lg-block">
+                        <ul class="navbar-nav justify-content-around col-xl-10 offset-xl-2">
+                            <li class=" nav-item active">
+                                <a class="nav-link" href="#">Главная</a>
+                            </li>
+                            <li class=" nav-item">
+                                <a class="nav-link" href="#catalog">Каталог</a>
+                            </li>
+                            <li class=" nav-item">
+                                <a class="nav-link" href="payment.Delivery.html">Оплата/доставка</a>
+                            </li>
+                            <li class=" nav-item">
+                                <a class="nav-link" href="blog.html">Блог</a>
+                            </li>
+                            <li class=" nav-item">
+                                <a class="nav-link" href="aboutUs.html">О нас</a>
+                            </li>
+                            <li class=" nav-item">
+                                <a class="nav-link" href="contacts.html">Контакты</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- site-navigation-listY -->
+            <div class="site-navigation-listY container-fluid d-lg-none bg-light">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav" role="menu">
+                        <li class=" nav-item active">
+                            <a class="nav-link" href="#">Главная</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="nav-link" href="#catalog">Каталог</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="nav-link" href="payment.Delivery.html">Оплата/доставка</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="nav-link" href="blog.html">Блог</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="nav-link" href="aboutUs.html">О нас</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="nav-link" href="contacts.html">Контакты</a>
+                        </li>
+                        <li class="dropdown-divider d-lg-none"></li>
+                        <li class="nav-item d-lg-none">
+                            <div class="row">
+                                <div class="col-1"><a class="nav-link" href="#">RU</a></div>
+                                <div class="col-1"><a class="nav-link" href="#">DE</a></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main class="main">
+        <!-- banner -->
+        <div class="banner">
+            <div class="carousel slide" id="carousel-models" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-model container-fluid p-0">
+                            <img src="source/images/info/carousel/3lg.png" class="carousel-img d-block w-100" id="carousel-model1" alt="...">
+                            <div class="carousel-caption  d-none d-md-block" id="carousel-caption-model1">
+                                <h3 class="uppercase">Достойный твоего внимания</h3>
+                                <p class="carousel-caption-p">Кошелек Shell C103</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-model container-fluid p-0">
+                            <img src="source/images/info/carousel/6lg.png" class="carousel-img d-block w-100" id="carousel-model2" alt="...">
+                            <div class="carousel-caption  d-none d-md-block" id="carousel-caption-model2">
+                                <h3 class="uppercase">Caption heading</h3>
+                                <p class="carousel-caption-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-model container-fluid p-0">
+                            <img src="source/images/info/carousel/20lg.png" class="carousel-img d-block w-100" id="carousel-model3" alt="...">
+                            <div class="carousel-caption  d-none d-md-block" id="carousel-caption-model3">
+                                <h3 class="uppercase">Caption heading</h3>
+                                <p class="carousel-caption-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-model container-fluid p-0">
+                            <img src="source/images/info/carousel/27.3lg.png" class="carousel-img d-block w-100" id="carousel-model4" alt="...">
+                            <div class="carousel-caption  d-none d-md-block " id="carousel-caption-model4">
+                                <h3 class="uppercase">Caption heading</h3>
+                                <p class="carousel-caption-p ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-model container-fluid p-0">
+                            <img src="source/images/info/carousel/30.2lg.png" class="carousel-img d-block w-100" id="carousel-model5" alt="...">
+                            <div class="carousel-caption  d-none d-md-block" id="carousel-caption-model5">
+                                <h3 class="uppercase">Caption heading</h3>
+                                <p class="carousel-caption-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slider -->
+                <div class="slider">
+                    <ol class="carousel-indicators justify-content-center" name="catalog" id="catalog">
+                        <li data-target="#carousel-models" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-models" data-slide-to="1"></li>
+                        <li data-target="#carousel-models" data-slide-to="2"></li>
+                        <li data-target="#carousel-models" data-slide-to="3"></li>
+                        <li data-target="#carousel-models" data-slide-to="4"></li>
+                    </ol>
+                    <a class="carousel-control-prev" href="#carousel-models" role="button" data-slide="prev">
+                        <span aria-hidden="true"><ion-icon name="chevron-back-circle-outline" size="large" aria-hidden="true"></ion-icon></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-models" role="button" data-slide="next">
+                        <span aria-hidden="true"><ion-icon name="chevron-forward-circle-outline" size="large" aria-hidden="true"></ion-icon></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- catalog-name -->
+        <h3 class="catalog-name text-center shadow-lg">
+            <a >Наша продукция</a></h3>
+        <!-- catalog -->
+        <div class="catalog-container">
+            <!-- catalog-items -->
+            <div class="catalog-items container-fluid d-inline-flex flex-wrap">
+                <!-- catalog-item1 -->
+                <div class="catalog-item col-lg-4 col-6">
+                    <a class="thumbnail" href="bit1.html" alt="">
+                        <img class="catalog-item-img img-thumbnail" src="source/images/info/catalog/cartholder_BitB102caFH.png" alt="cartholder_BitB10caFH" />
+                        <div class="catalog-item-description container">
+                            <h4 class="catalog-item-name">Kардхолдер Bit</h4>
+                            <p class="catalog-item-color">Морковный</p>
+                            <div class="catalog-item-price-next container">
+                                <div class="row justify-content-between align-items-end">
+                                        <h5 class="catalog-item-price m-0">250 грн.</h5>
+                                        <ion-icon id="colo" name="chevron-forward-outline"></ion-icon>
+                                    </div>
+                            </div>
+                          </div>
+                    </a>
+                </div>
+                <!-- catalog-item2 -->
+                <div class="catalog-item col-lg-4 col-6">
+                    <a class="thumbnail" href="#" alt="">
+                        <img class="catalog-item-img img-thumbnail" src="source/images/info/catalog/cartholder_BitB102brFH.png" alt="cartholder_BitB10caFH" />
+                        <div class="catalog-item-description container">
+                            <h4 class="catalog-item-name">Kардхолдер Bit</h4>
+                            <p class="catalog-item-color">Коричневый</p>
+                            <div class="catalog-item-price-next container">
+                                <div class="row justify-content-between align-items-end">
+                                    <h5 class="catalog-item-price m-0">250 грн.</h5>
+                                    <ion-icon id="colo" name="chevron-forward-outline"></ion-icon>
+                                </div>
+                            </div>
+                         </div>
+                    </a>
+                </div>
+                <!-- catalog-item3 -->
+                <div class="catalog-item col-lg-4 col-6">
+                    <a class="thumbnail" href="#" alt="">
+                        <img class="catalog-item-img img-thumbnail" src="source/images/info/catalog/cartholder_BitB102blFH.png" alt="cartholder_BitB10caFH" />
+                        <div class="catalog-item-description container">
+                            <h4 class="catalog-item-name">Kардхолдер Bit</h4>
+                            <p class="catalog-item-color">Черный</p>
+                            <div class="catalog-item-price-next container">
+                                <div class="row justify-content-between align-items-end">
+                                    <h5 class="catalog-item-price m-0">250 грн.</h5>
+                                    <ion-icon id="colo" name="chevron-forward-outline"></ion-icon>
+                                </div>
+                            </div>
+                          </div>
+                    </a>
+                </div>
+                <!-- catalog-item4 -->
+                <div class="catalog-item col-lg-4 col-6">
+                    <a class="thumbnail" href="#" alt="">
+                        <img class="catalog-item-img img-thumbnail" src="source/images/info/catalog/wallet_ShellC1032caFH.png" alt="cartholder_BitB10caFH" />
+                        <div class="catalog-item-description container">
+                            <h4 class="catalog-item-name">Кошелек Shell</h4>
+                            <p class="catalog-item-color">Морковный</p>
+                            <div class="catalog-item-price-next container">
+                                <div class="row justify-content-between align-items-end">
+                                    <h5 class="catalog-item-price m-0">1000 грн.</h5>
+                                    <ion-icon id="colo" name="chevron-forward-outline"></ion-icon>
+                                </div>
+                            </div>
+                         </div>
+                    </a>
+                </div>
+                <!-- catalog-item5 -->
+                <div class="catalog-item col-lg-4 col-6">
+                    <a class="thumbnail" href="#" alt="">
+                        <img class="catalog-item-img img-thumbnail" src="source/images/info/catalog/wallet_ShellC1032brFH.png" alt="cartholder_BitB10caFH" />
+                        <div class="catalog-item-description container">
+                            <h4 class="catalog-item-name">Кошелек Shell</h4>
+                            <p class="catalog-item-color">Коричневый</p>
+                            <div class="catalog-item-price-next container">
+                                <div class="row justify-content-between align-items-end">
+                                    <h5 class="catalog-item-price m-0">1000 грн.</h5>
+                                    <ion-icon id="colo" name="chevron-forward-outline"></ion-icon>
+                                </div>
+                            </div>
+                           </div>
+                    </a>
+                </div>
+                <!-- catalog-item6 -->
+                <div class="catalog-item col-lg-4 col-6">
+                    <a class="thumbnail" href="#" alt="">
+                        <img class="catalog-item-img img-thumbnail" src="source/images/info/catalog/wallet_ShellC1032blFH.png" alt="cartholder_BitB10caFH" />
+                        <div class="catalog-item-description container">
+                            <h4 class="catalog-item-name">Кошелек Shell</h4>
+                            <p class="catalog-item-color">Черный</p>
+                            <div class="catalog-item-price-next container">
+                                <div class="row justify-content-between align-items-end">
+                                    <h5 class="catalog-item-price m-0">1000 грн.</h5>
+                                    <ion-icon id="colo" name="chevron-forward-outline"></ion-icon>
+                                </div>
+                            </div>
+                          </div>
+                    </a>
+                </div>
+                <!-- catalog-item7 -->
+                <div class="catalog-item col-lg-4 col-6">
+                    <a class="thumbnail" href="#" alt="">
+                        <img class="catalog-item-img img-thumbnail" src="source/images/info/catalog/purse_WingD1084blFH.png" alt="cartholder_BitB10caFH" />
+                        <div class="catalog-item-description container">
+                            <h4 class="catalog-item-name">Портмоне Wing</h4>
+                            <p class="catalog-item-color">Черный</p>
+                             <div class="catalog-item-price-next container">
+                                <div class="row justify-content-between align-items-end">
+                                    <h5 class="catalog-item-price m-0">1300 грн.</h5>
+                                    <ion-icon id="colo" name="chevron-forward-outline"></ion-icon>
+                                </div>
+                            </div>
+                           </div>
+                    </a>
+                </div>
+                <!-- catalog-item8 -->
+                <div class="catalog-item col-lg-4 col-6">
+                    <a class="thumbnail" href="#" alt="">
+                        <img class="catalog-item-img img-thumbnail" src="source/images/info/catalog/purse_LeafD5164blFH.png" alt="cartholder_BitB10caFH" />
+                        <div class="catalog-item-description container">
+                            <h4 class="catalog-item-name">Портмоне Leaf</h4>
+                            <p class="catalog-item-color">Черный</p>
+                            <div class="catalog-item-price-next container">
+                                <div class="row justify-content-between align-items-end">
+                                    <h5 class="catalog-item-price m-0">1300 грн.</h5>
+                                    <ion-icon id="colo" name="chevron-forward-outline"></ion-icon>
+                                </div>
+                            </div>
+                          </div>
+                    </a>
+                </div>
+                <!-- catalog-item9 -->
+                <div class="catalog-item col-lg-4 col-6 order-11 order-xs-9">
+                    <a class="thumbnail" href="#" alt="">
+                        <img class="catalog-item-img img-thumbnail" src="source/images/info/catalog/purse_BigBossF2123blFH.png" alt="cartholder_BitB10caFH" />
+                        <div class="catalog-item-description container">
+                            <h4 class="catalog-item-name">Портмоне BigBoss</h4>
+                            <p class="catalog-item-color">Черный</p>
+                            <div class="catalog-item-price-next container">
+                                <div class="row justify-content-between align-items-end">
+                                    <h5 class="catalog-item-price m-0">2300 грн.</h5>
+                                    <ion-icon id="colo" name="chevron-forward-outline"></ion-icon>
+                                </div>
+                            </div>
+                          </div>
+                    </a>
+                </div>
+                <!-- catalog-item10 -->
+                <div class="catalog-item col-lg-4 col-6 order-9 order-xs-10">
+                    <a class="thumbnail" href="#" alt="">
+                        <img class="catalog-item-img img-thumbnail" src="source/images/info/catalog/necessar_KegE1010blFH.png" alt="cartholder_BitB10caFH" />
+                        <div class="catalog-item-description container">
+                            <h4 class="catalog-item-name">Несессер Keg</h4>
+                            <p class="catalog-item-color">Черный гладкий</p>
+                           <div class="catalog-item-price-next container">
+                            <div class="row justify-content-between align-items-end">
+                                <h5 class="catalog-item-price m-0">1100 грн.</h5>
+                                <ion-icon id="colo" name="chevron-forward-outline"></ion-icon>
+                            </div>
+                            </div>
+                          </div>
+                    </a>
+                </div>
+                <!-- catalog-item11 -->
+                <div class="catalog-item col-lg-4 col-6 order-10 order-xs-11">
+                    <a class="thumbnail" href="#" alt="">
+                        <img class="catalog-item-img img-thumbnail" src="source/images/info/catalog/necessar_KegE1012blsFH.png" alt="cartholder_BitB10caFH" />
+                        <div class="catalog-item-description container">
+                            <h4 class="catalog-item-name">Несессер Keg</h4>
+                            <p class="catalog-item-color">Черный</p>
+                            <div class="catalog-item-price-next container">
+                                <div class="row justify-content-between align-items-end">
+                                    <h5 class="catalog-item-price m-0">1100 грн.</h5>
+                                    <ion-icon id="colo" name="chevron-forward-outline"></ion-icon>
+                                </div>
+                            </div>
+                           </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <!-- reviews -->
+        <div class="carousel slide" id="reviews" data-ride="carousel" data-interval="10000">
+            <div class="carousel-inner" role="listbox">
+                <!-- review1 -->
+                <div id="review1" class="carousel-item justify-content-around align-content-center active">
+                    <div class="col mx-auto py-1 d-block">
+                        <img class="img-thumbnail rounded-circle mx-auto d-block" alt="..." src="source/images/info/reviews/cat.jpg">
+                    </div>
+                    <div class="col carousel-caption align-self-stretch mx-0">
+                        <h3>Caption heading 1</h3>
+                        <p class="mb-1">Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.</p>
+                    </div>
+                </div>
+                <!-- review2 -->
+                <div id="review2" class="carousel-item  justify-content-around align-content-center" >
+                    <div class="col mx-auto py-1 d-block">
+                        <img class="img-thumbnail rounded-circle mx-auto d-block" alt="..." src="source/images/info/reviews/cat.jpg">
+                    </div>
+                    <div class="carousel-caption align-self-stretch mx-0">
+                        <h3>Caption heading 2</h3>
+                        <p class="mb-1">Ut fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat.</p>
+                    </div>
+                </div>
+                <!-- review3 -->
+                <div id="review3" class="carousel-item  justify-content-around align-content-center" >
+                    <div class="col mx-auto py-1 d-block">
+                        <img class="img-thumbnail rounded-circle mx-auto d-block" alt="..." src="source/images/info/reviews/cat.jpg">
+                    </div>
+                    <div class="carousel-caption align-self-stretch mx-0">
+                        <h3>Caption heading 3</h3>
+                        <p class="mb-1">Nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- slider -->
+            <div class="slider">
+                <ol class="carousel-indicators reviews-indicators">
+                    <li data-target="#reviews" data-slide-to="0" class="active"></li>
+                    <li data-target="#reviews" data-slide-to="1"></li>
+                    <li data-target="#reviews" data-slide-to="2"></li>
+                </ol>
+                <a class="carousel-control-prev" href="#reviews" role="button" data-slide="prev">
+                    <span><ion-icon name="chevron-back-circle-outline" size="large" aria-hidden="true"></ion-icon></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#reviews" role="button" data-slide="next">
+                    <span><ion-icon name="chevron-forward-circle-outline" size="large" aria-hidden="true"></ion-icon></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </main>
+    <hr />
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <!-- copyright -->
+            <div class="copyright-block">
+                <div class="copyright-block-name">
+                    <i class="fontawesome-icon far fa-copyright"></i>
+                    <div class="year2020"> 2020 </div>
+                    <div class="fh">Fox Hunter</div>
+                </div>                
+                <div class="est"> made in Kiev / est. 2018 </div>
+            </div>
+            <!-- phone-number -->
+            <div class="phone-number">+380 97 878 1258</div>
+            <!-- social-media -->
+            <div class="social-media-block">
+                <div class="social-media-block-up">
+                    <a href="" alt="facebook"><i class="fontawesome-icon fab fa-facebook-square"></i></a>
+                    <a href="" alt="instagram"><i class="fontawesome-icon fab fa-instagram"></i></a>
+                    <a href="" alt="pinterest"><i class="fontawesome-icon fab fa-pinterest"></i></a>
+                </div>
+                <div class="social-media-block-down">
+                    <a href="" alt="telegram"><i class="fontawesome-icon fab fa-telegram"></i></a>
+                    <a href="" alt="viber"><i class="fontawesome-icon fab fa-viber"></i></a>
+                    <a href="" alt="whatsapp"><i class="fontawesome-icon fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <!-- cooperation -->
+            <div class="cooperation-block">
+                <div class="cooperation-items">
+                    <a href="#" class="contacts">Контакты </a>
+                    <span class="divider">|</span>
+                    <a href="#" class="cooperation"> Сотрудничество</a>
+                </div>
+                <div class="payment-systems">
+                        <i class="fontawesome-icon fab fa-cc-visa fa-2x"></i>
+                        <i class="fontawesome-icon fab fa-cc-mastercard fa-2x"></i>
+                </div>
+            </div>
+                
+        </div>      
+    </footer>
+</body>
+</html>

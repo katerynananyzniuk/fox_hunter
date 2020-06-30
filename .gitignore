@@ -1,0 +1,19 @@
+/.vscode
+/build
+/node_modules
+npm-debug.log
+###Windows templates
+#Windows image file caches
+Thumbs.db
+ehthumbs.db
+#Folder config file
+Desctop.ini
+#Recycle Bin used on file shares
+$RECYCLE.BIN/
+#Window Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+#Window shortcuts
+*.lnk
