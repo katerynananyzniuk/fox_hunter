@@ -1,6 +1,6 @@
-/.vscode
-/build
-/node_modules
+.vscode
+build
+node_modules
 npm-debug.log
 ###Windows templates
 #Windows image file caches
