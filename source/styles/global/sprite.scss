@@ -1,0 +1,112 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$1200px-ukrposhta-ua-name: '1200px-Ukrposhta-ua';
+$1200px-ukrposhta-ua-x: 1224px;
+$1200px-ukrposhta-ua-y: 0px;
+$1200px-ukrposhta-ua-offset-x: -1224px;
+$1200px-ukrposhta-ua-offset-y: 0px;
+$1200px-ukrposhta-ua-width: 1200px;
+$1200px-ukrposhta-ua-height: 321px;
+$1200px-ukrposhta-ua-total-width: 2424px;
+$1200px-ukrposhta-ua-total-height: 975px;
+$1200px-ukrposhta-ua-image: '../images/sprite.png';
+$1200px-ukrposhta-ua: (1224px, 0px, -1224px, 0px, 1200px, 321px, 2424px, 975px, '../images/sprite.png', '1200px-Ukrposhta-ua', );
+$-nova-poshta-2014-logo-name: 'Nova_Poshta_2014_logo';
+$-nova-poshta-2014-logo-x: 0px;
+$-nova-poshta-2014-logo-y: 546px;
+$-nova-poshta-2014-logo-offset-x: 0px;
+$-nova-poshta-2014-logo-offset-y: -546px;
+$-nova-poshta-2014-logo-width: 1200px;
+$-nova-poshta-2014-logo-height: 429px;
+$-nova-poshta-2014-logo-total-width: 2424px;
+$-nova-poshta-2014-logo-total-height: 975px;
+$-nova-poshta-2014-logo-image: '../images/sprite.png';
+$-nova-poshta-2014-logo: (0px, 546px, 0px, -546px, 1200px, 429px, 2424px, 975px, '../images/sprite.png', 'Nova_Poshta_2014_logo', );
+$justin-name: 'justin';
+$justin-x: 0px;
+$justin-y: 0px;
+$justin-offset-x: 0px;
+$justin-offset-y: 0px;
+$justin-width: 1224px;
+$justin-height: 546px;
+$justin-total-width: 2424px;
+$justin-total-height: 975px;
+$justin-image: '../images/sprite.png';
+$justin: (0px, 0px, 0px, 0px, 1224px, 546px, 2424px, 975px, '../images/sprite.png', 'justin', );
+$spritesheet-width: 2424px;
+$spritesheet-height: 975px;
+$spritesheet-image: '../images/sprite.png';
+$spritesheet-sprites: ($1200px-ukrposhta-ua, $-nova-poshta-2014-logo, $justin, );
+$spritesheet: (2424px, 975px, '../images/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
