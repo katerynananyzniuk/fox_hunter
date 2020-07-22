@@ -1,0 +1,93 @@
+@import "global/mixins";
+
+.slider{
+ min-height: 400px;
+ min-width: 0;
+ display: flex;
+ flex-direction: column;
+ position: relative;
+ background: radial-gradient(ellipse,rgb(248,248,240), rgb(183,183,176));
+  &_item{
+    text-align: center;
+    position: relative;
+  }
+  &_img{
+    height: 100%;
+  }
+  &_desc{
+    position: absolute;
+    width: 400px;
+    top: 10%;
+    right: 10%;
+  }
+  #slider_desc_2{
+    top: 10%;
+    left:10%;
+  }
+  #slider_desc_4{
+    top: 50%;
+    right: 5%;
+  }
+  #slider_desc_5{
+    top: 10%;
+    right: 5%;
+  }
+  &_title{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 28px;
+    color: $color-link-main;
+  }
+  &_text{
+    font-size: 24px;
+    color: $color-link-lighten;
+  }
+}
+.slick-track{
+  display: flex;
+}
+.slick-list{
+  overflow: hidden;
+}
+.slider .slick-arrow{
+  @include centerer-y;
+  z-index: 10;
+  font-size: 0;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: $color-text-dark;
+}
+.slider .slick-prev{
+  left: 2%;
+  mask: url(../../images/info/icons/chevron-back-circle-outline.svg) 0 0 / 100% no-repeat;
+}
+.slider .slick-next{
+  right: 2%;
+  mask: url(../../images/info/icons/chevron-forward-circle-outline.svg) 0 0 / 100% no-repeat;
+}
+.slider .slick-dots{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:0;
+}
+.slider .slick-dots li{
+  list-style: none;
+  margin: 0 25px;
+}
+.slider .slick-dots button{
+  font-size: 0;
+  width: 35px;
+  height: 4px;
+  position: absolute;
+  bottom: 10%;
+  background-color: $color-text-light;
+  opacity: .3;
+  border:none;
+}
+.slider .slick-dots li.slick-active button{
+  background-color: $color-text-light;
+  border:none;
+  opacity: 1;
+}

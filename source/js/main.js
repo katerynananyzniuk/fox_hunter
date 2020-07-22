@@ -1,0 +1,30 @@
+$(document).ready(function(){
+  $('.slider').slick({
+    dots:true,
+    speed:1000,
+    autoplay:false,
+    autoplayspeed:2500,
+    pauseOnFocus:true,
+    pauseOnHover:true,
+    pauseOnDotsHover:true,
+    draggable:false,
+    touchMove:true,
+    waitForAnimate:false,
+    slick:false
+  });
+});
+
+$(document).ready(function(){
+  $('.reviews').slick({
+    dots:false,
+    speed:1000,
+    autoplay:false,
+    autoplayspeed:2500,
+    pauseOnFocus:true,
+    pauseOnHover:true,
+    pauseOnDotsHover:true,
+    draggable:false,
+    touchMove:true,
+    waitForAnimate:false
+  });
+});

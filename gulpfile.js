@@ -7,6 +7,8 @@ const rimraf = require('rimraf');
 const rename = require("gulp-rename");
 const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
+const uglify = require('gulp-uglify');
+const concat = require('gulp-concat');
 
 /*------Server------*/
 gulp.task('server', function() {
@@ -23,7 +25,9 @@ gulp.task('server', function() {
 
 /*------Pug compile------*/
 gulp.task('templates:compile', function buildHTMguL() {
-    return gulp.src('source/templates/index.pug')
+    return gulp.src(
+        'source/templates/index.pug'
+        )
     .pipe(pug({
         pretty: true
     }))
@@ -32,10 +36,14 @@ gulp.task('templates:compile', function buildHTMguL() {
 
 /*------Styles compile------*/
 gulp.task('styles:compile', function () {
-    return gulp.src('source/styles/main.scss')
+    return gulp.src(
+        'source/styles/main.scss'
+        )
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle:'compressed'}).on('error', sass.logError))
-        .pipe(rename('main.min.css'))
+        .pipe(rename(
+            'main.min.css'
+        ))
         .pipe(autoprefixer({
             cascade: false
         }))
@@ -43,6 +51,26 @@ gulp.task('styles:compile', function () {
         .pipe(gulp.dest('build/css'));
 });
 
+/*------Slider------*/
+gulp.task('slider', function(){
+    return gulp.src('source/js/slick.min.js')
+    .pipe(gulp.dest('build/js'));
+});
+
+/*------js------*/
+gulp.task('js', function(){
+    return gulp.src([
+            'source/js/form.js',
+            'source/js/main.js'
+        ])  
+        .pipe(sourcemaps.init())
+        .pipe(concat(
+            'main.min.js'
+        ))
+        .pipe(uglify())
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('build/js'));
+});
 
 /*------Sprite------*/
   gulp.task('sprite', function (cb) {
@@ -81,12 +109,13 @@ gulp.task('styles:compile', function () {
     gulp.task('watch', function () {
         gulp.watch('source/templates/**/*.pug', gulp.series('templates:compile'));
         gulp.watch('source/styles/**/*.scss', gulp.series('styles:compile'));
+        gulp.watch('source/js/**/*.js', gulp.series('js'));
     });
     
 /*------Default------*/
     gulp.task('default', gulp.series(
     'clean',
-    gulp.parallel('templates:compile','styles:compile','sprite','copy'),
+    gulp.parallel('templates:compile','styles:compile','js','slider','sprite','copy'),
     gulp.parallel('watch','server')
     )
 );

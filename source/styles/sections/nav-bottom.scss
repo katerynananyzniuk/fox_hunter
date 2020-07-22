@@ -1,0 +1,16 @@
+.nav-bottom .list{
+  display: flex;
+  justify-content: space-between;
+  font-family: $ff-main-bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  padding: 0 34px 0 300px;
+  font-size:16px;
+}
+.nav-Y{
+  display: none;
+}
+.nav{
+  display: inline-block;
+  vertical-align: top;  
+}

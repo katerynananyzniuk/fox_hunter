@@ -1,0 +1,11 @@
+section.products
+  .container
+    .products_title.text-uppercase Наша продукция
+    ul.product_list
+      -var items = [,,,,,,,,] 
+      -var alt = ['cartholder_BitB10caFH','wallet_ShellC1032caFH','purse_WingD1084blFH','purse_LeafD5164blFH','purse_BigBossF2123blFH','necessar_KegE1010blFH','belt','keyholder']
+      -var src = ["../../images/info/catalog/cartholder_BitB102caFH.png","../../images/info/catalog/wallet_ShellC1032caFH.png","../../images/info/catalog/purse_WingD1084blFH.png","../../images/info/catalog/purse_LeafD5164blFH.png","../../images/info/catalog/purse_BigBossF2123blFH.png","../../images/info/catalog/necessar_KegE1010blFH.png","../../images/info/catalog/belt.jpg","../../images/info/catalog/keyholder.jpg"]
+      -var span = ['кардхолдер Bit','Кошелек Shell','Портмоне Wing','Портмоне Leaf','Портмоне BigBoss','Несессер Keg','Ремень Belt','Ключница Keyholder']
+      -var desc = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quia, adipisci doloribus voluptates assumenda nihil amet reprehenderit? Saepe, qui! Non rerum earum sint, maxime aperiam neque molestiae ducimus deserunt libero.'
+      include products-mixin
+      +products(items,'product',alt,src,span,desc)

@@ -1,0 +1,8 @@
+mixin nav(items, className, active)
+  ul(class=className)
+    each item,key in items
+      li(class= className + '_item')
+        if key === active
+          span(class=className + '_active')=item
+        else
+          a(class=className + '_link' href=links[key])=item

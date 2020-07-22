@@ -1,27 +1,27 @@
-﻿body {
+﻿/* body {
     background-color: rgb(251,251,251);
     font-family: 'Roboto', sans-serif;
     color: black;
-}
+} */
 
 /* *{border:1px solid red; box-sizing:border-box} */
 
 /* HEADER */
-
+/* 
 .page-nav {
     padding:0px;
     margin: 0px;
     height:150px;
-}
-
+} */
+/* 
     .navbar-brand {
         margin: 0;
         padding: 0;
         height: 150px;
         width: 220px;
-    }
+    } */
 
-#FHLogoDog, #FHLogoName {
+/* #FHLogoDog, #FHLogoName {
     position: relative;
 }
 
@@ -37,17 +37,17 @@
     height: 45px;
     z-index: 1;
 }
-
-
+ */
+/* 
 .fontawesome-icon {
     color: black;
     font-size: 28px;
     padding: 0 4px;
-}
-
+} */
+/* 
 a .fontawesome-icon:hover {
        color: darkgray;
-    }
+    } */
 
 
 .dropdown-menu {

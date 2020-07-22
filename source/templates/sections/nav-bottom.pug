@@ -1,0 +1,13 @@
+nav.nav-bottom.nav-X
+      -var links = ['index.html','catalog.html','payment.Delivery.html','blog.html','aboutUs.html','contacts.html']
+      -var items = ['Главная','Каталог','Оплата/доставка','Блог','О нас','Контакты']
+      include nav-mixin
+      +nav(items,'list', 0)
+nav.nav-bottom.nav-Y
+      include nav-mixin
+      +nav(items,'list', 0)
+      li.dropdown-divider
+        hr
+      li.nav-bottom_item
+        a.nav-link(href="#") RU
+        a.nav-link(href="#") EN

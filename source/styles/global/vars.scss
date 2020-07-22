@@ -1,0 +1,32 @@
+//Fonts
+$ff-main: "roboto-regular";
+$ff-main-bold: "roboto-bold";
+$ff-main-logoName: "montserrat-bold";
+
+//Backgrounds
+$color-background: #FBFBFB;
+$color-background-dark: lighten(#505050,40%);
+
+// Icons
+$color-icon-main: #505050;
+$color-icon-lighten: lighten(#505050,20%);
+$color-icon-darken: darken(#505050,20%);
+
+//Links
+$color-link-main: #505050;
+$color-link-lighten: lighten(#505050,20%);
+$color-link-darken: darken(#505050,20%);
+
+//Forms
+$color-form-border: lighten(#505050,40%);
+$color-form-background: #FBFBFB;
+
+//Buttons
+$color-btn-background:darken(#FBFBFB,3%);
+$color-btn-background-darken:darken(#FBFBFB,10%);
+$color-btn-border: lighten(#505050,40%);
+
+//Text
+$color-text-light: #FBFBFB;
+$color-text-dark: #838383; 
+$color-text-darken: darken(#505050,20%);

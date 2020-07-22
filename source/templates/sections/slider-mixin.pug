@@ -1,0 +1,14 @@
+mixin slider(items,className,dataLazy,count,title,text)
+  each item,key in items
+    div(class=className + '_item')=item
+      img(
+      class=className + '_img' 
+      alt=text[key]     
+      data-lazy=dataLazy[key]
+      )
+      div(
+      class=className + '_desc'
+      id=className+ '_desc_' + count[key]
+      )
+        h1(class=className + '_title')=title[key]
+        p(class=className + '_text')=text[key]

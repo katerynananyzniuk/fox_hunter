@@ -1,0 +1,73 @@
+.footer{
+  padding: 0 2% 10px 2%;  
+  display: grid;
+  grid-template-columns: 3fr 2fr 3fr 4fr;
+  align-items: center;
+  color: $color-text-darken;
+}
+.copyright-block{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+    &_name{
+    display:flex;
+    flex-direction: row;
+  }
+}
+.fa-copyright{
+  font-size: 24px;
+  color: $color-icon-darken;
+  &:hover{
+    color: $color-icon-darken;
+  }
+}
+.fh {
+  font-family: $ff-main-logoName;
+  font-weight: 700;
+  font-size: 20px;
+}
+.year2020{
+  font-weight:bold; 
+  font-size:20px;
+}
+.est{
+  display: inline;
+  padding: 5px 5px;
+}
+.phone-number{
+  display:flex;
+  align-content: center;
+  justify-content: center;
+}
+.social-media-block{
+  list-style: none;   
+  display:flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.social-media-block .fontawesome-icon{
+  color: $color-icon-darken;
+  font-size:28px;
+}
+.cooperation-block{
+  display:flex;
+  align-content: center;
+  justify-content: space-around;
+}
+.cooperation-items{
+  display: flex;
+  align-items: center;
+}
+.contacts,.divider,.cooperation{
+  color: $color-icon-darken;
+}
+.divider{
+  padding: 0 4px;
+}
+.payment-systems{
+  display:flex;
+}
+.payment-systems .fontawesome-icon{
+  color: $color-icon-darken;
+}

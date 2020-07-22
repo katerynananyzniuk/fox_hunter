@@ -1,0 +1,12 @@
+mixin products(items,className,alt,src,span,desc)
+  each item,key in items
+    li(class=className + '_item')=item
+      img(
+      class=className + '_img' 
+      alt=alt[key]     
+      src=src[key]
+      )
+      div(class=className + '_text')
+        div(class=className + '_title')
+          span(class="text-capitalize")=span[key]
+        p(class=className + '_desc')=desc

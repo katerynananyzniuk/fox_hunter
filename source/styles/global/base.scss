@@ -1,0 +1,57 @@
+body{
+  background-color: $color-background;
+  font-family: $ff-main;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: $color-text-dark;
+}
+
+html{
+  box-sizing: border-box;
+}
+
+*,*:before,*:after{
+  box-sizing: inherit;
+}
+
+ul,ol{
+  list-style-type: none;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: $color-link-main;
+}
+
+.fontawesome-icon{
+  color: $color-icon-main;
+  font-size: 24px;
+  padding: 0 4px;
+  &:hover{
+    color: $color-icon-lighten;
+  }
+}
+
+.text-uppercase{
+  text-transform: uppercase;
+}
+
+.text-capitalize{
+  text-transform: capitalize;
+}
+
+.clearfix{
+  &::after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.hr{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,.1);
+}

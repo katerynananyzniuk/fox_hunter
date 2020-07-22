@@ -1,0 +1,15 @@
+mixin reviews(items,className,alt,src,text,links,author,icon)
+  each item,key in items
+    div(class=className + '_item')=item
+      img(
+      class=className + '_img' 
+      alt=alt[key]     
+      src=src[key]
+      )
+      div(
+      class=className + '_desc'
+      )
+        p(class=className + '_text')='"'+text[key]+'"'
+        a(class=className + '_link' src=links[key])
+          p(class=className + '_author')=author[key]
+          i(class=icon[key])

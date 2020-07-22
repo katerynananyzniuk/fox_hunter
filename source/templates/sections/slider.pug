@@ -1,0 +1,8 @@
+section.slider
+  -var items = [,,,,,] 
+  -var dataLazy = ["../../images/info/carousel/3lg.png","../../images/info/carousel/6lg.png","../../images/info/carousel/20lg.png","../../images/info/carousel/27.30lg.png","../../images/info/carousel/30.20lg.png"]
+  -var count = ['1','2','3','4','5']
+  -var title = ['Достойный твоего внимания1','Достойный твоего внимания2','Достойный твоего внимания3','Достойный твоего внимания4','Достойный твоего внимания5']
+  -var text = ['Кошелек 1','Кошелек 2','Кошелек 3','Кошелек 4','Кошелек 5']
+  include slider-mixin
+  +slider(items,'slider',dataLazy,count,title,text)

@@ -1,0 +1,10 @@
+section.reviews
+  -var items = [,,,,,] 
+  -var alt = ['img1','img2','img3','img4','img5']
+  -var src = ["../../images/info/reviews/1.png","../../images/info/reviews/2.png","../../images/info/reviews/2.png","../../images/info/reviews/2.png","../../images/info/reviews/2.png"]
+  -var text = ['Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sed delectus, explicabo officiis excepturi harum!','Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sed delectus, explicabo officiis excepturi harum!','Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sed delectus, explicabo officiis excepturi harum!','Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sed delectus, explicabo officiis excepturi harum!','Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sed delectus, explicabo officiis excepturi harum!']
+  -var links = ['https://www.instagram.com/p/Bvt-VcunuA1/','https://www.instagram.com/p/Bvt-VcunuA1/','https://www.instagram.com/p/Bvt-VcunuA1/','https://www.instagram.com/p/Bvt-VcunuA1/','https://www.instagram.com/p/Bvt-VcunuA1/']
+  -var author = ['Имя Фамилия1','Имя Фамилия2','Имя Фамилия3','Имя Фамилия4','Имя Фамилия5']
+  -var icon = ['fontawesome-icon fab fa-instagram','fontawesome-icon fab fa-instagram','fontawesome-icon fab fa-instagram','fontawesome-icon fab fa-instagram','fontawesome-icon fab fa-instagram']
+  include reviews-mixin
+  +reviews(items,'review',alt,src,text,links,author,icon)
