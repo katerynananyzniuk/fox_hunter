@@ -24,9 +24,10 @@ gulp.task('server', function() {
 });
 
 /*------Pug compile------*/
-gulp.task('templates:compile', function buildHTMguL() {
+gulp.task('templates:compile', function buildHTML() {
     return gulp.src(
-        'source/templates/index.pug'
+        ['source/templates/index.pug',
+        'source/templates/**/*.pug']
         )
     .pipe(pug({
         pretty: true

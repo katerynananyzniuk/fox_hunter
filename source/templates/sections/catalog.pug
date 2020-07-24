@@ -1,0 +1,12 @@
+section.catalog
+  .container
+    ul.catalog_list
+      -var items = [,,,,,,,,,,,] 
+      -var href = ['bit1.html','bit2.html','bit3.html','shell1.html','shell2.html','shell3.html','wing.html','leaf.html','bigBoss.html']
+      -var alt = ['cartholder_BitB102caFH','cartholder_BitB102brFH','cartholder_BitB102blFH','wallet_ShellC1032caFH','wallet_ShellC1032brFH','wallet_ShellC1032blFH','purse_WingD1084blFH','purse_LeafD5164blFH','necessar_KegE1010blFH','necessar_KegE1012blsFH','purse_BigBossF2123blFH']
+      -var src = ['../../images/info/catalog/cartholder_BitB102caFH.png','../../images/info/catalog/cartholder_BitB102brFH.png','../../images/info/catalog/cartholder_BitB102blFH.png','../../images/info/catalog/wallet_ShellC1032caFH.png','../../images/info/catalog/wallet_ShellC1032brFH.png','../../images/info/catalog/wallet_ShellC1032blFH.png','../../images/info/catalog/purse_WingD1084blFH.png','../../images/info/catalog/purse_LeafD5164blFH.png','../../images/info/catalog/necessar_KegE1010blFH.png','../../images/info/catalog/necessar_KegE1012blsFH.png','../../images/info/catalog/purse_BigBossF2123blFH.png']
+      -var title = ['кардхолдер Bit','кардхолдер Bit','кардхолдер Bit','кошелек Shell','кошелек Shell','кошелек Shell','портмоне Wing','портмоне Leaf','несессер Keg','несессер Keg','портмоне BigBoss']
+      -var color = ['Морковный','Коричневый','Черный','Морковный','Коричневый','Черный','Черный','Черный','Черный','Черный гладкий','Черный']
+      -var price = ['250 грн.','250 грн.','250 грн.','1000 грн.','1000 грн.','1000 грн.','1300 грн.','1300 грн.','1100 грн.','1100 грн.','2300 грн.']
+      include catalog-mixin
+      +catalog(items,'catalog',href,alt,src,title,color,price)

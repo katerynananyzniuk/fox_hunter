@@ -74,7 +74,7 @@ a .fontawesome-icon:hover {
 
 /* BANNER */
 
-.banner {
+/* .banner {
     margin-top: 150px;
     background: radial-gradient(ellipse,rgb(248,248,240), rgb(183,183,176));
    }
@@ -135,7 +135,7 @@ a .fontawesome-icon:hover {
 .carousel-caption-p{
     font-size: 24px;
     color: rgb(138, 138, 138);
-}
+} */
 
 /* .carousel-control-prev, .carousel-control-next{
     max-width: 5%;
@@ -169,7 +169,7 @@ a .fontawesome-icon:hover {
 }
 
 .catalog-item-price{
-    color:rgb(183,107,38);
+    color:#b76b26;
 }
 
 

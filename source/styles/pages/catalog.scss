@@ -1,0 +1,46 @@
+.catalog{
+  padding: 0 15px;
+  margin: 30px 0;
+  &_list{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+  }
+  &_item{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+  &-item_img{
+    width: 100%;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 4px;
+  }
+  &-item_desc{
+    padding: 20px 15px;
+  }
+  &-item_title{
+    font-size: 22px;
+    font-weight: 400;
+    margin:0 0 8px 0;
+    color: $color-text-darken;
+  }
+  &-item_color{
+    color: $color-text-dark;
+  }
+  &-item_price-next{
+    display: flex;
+    justify-content: space-between;
+    .fontawesome-icon{
+      color: $color-text-darken;
+      &:hover{
+        color: $color-text-foxy;
+      }
+    }
+  }
+  &-item_price{
+    color: $color-text-foxy;
+    font-size: 20px;
+    font-weight: normal;
+  }
+}

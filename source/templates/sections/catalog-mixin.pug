@@ -1,0 +1,20 @@
+mixin catalog(items,className,href,alt,src,title,color,price)
+  each item,key in items
+    li(class=className + '_item')=item
+      a(
+      class=className + '-item_link' 
+      href=href[key]
+      )
+        img(
+        class=className + '-item_img' 
+        alt=alt[key]     
+        src=src[key]
+        )
+        div(class=className + '-item_desc')
+          h4(class=className + '-item_title')=title[key]
+          p(class=className + '-item_color')=color[key]
+          div(class=className + '-item_price-next')
+            div(class=className + '-item_price')=price[key]
+            i(class="fontawesome-icon fas fa-chevron-right")
+
+
