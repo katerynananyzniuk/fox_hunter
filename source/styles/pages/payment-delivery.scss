@@ -1,0 +1,63 @@
+.payment-delivery{
+  max-width: 1000px;
+  margin: 40px auto;    
+  padding: 0 50px;
+  position: relative;
+  &-title{
+    font-size: 28px;
+    font-weight: 700;
+    padding: 10px 55px;
+    margin-bottom: 10px;
+  color: $color-text-darken;
+  }  
+}
+.icon{
+  font-size: 28px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & .fontawesome-icon{
+  color: $color-text-darken;
+  }
+}
+.payment-item, .delivery-item{
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+.payment-item-list{
+  list-style-type: disc;
+  padding-inline-start: 40px;
+}
+.payment-item-text{
+  margin-top: 5px;
+}
+[class$="item-title"]{
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 0;
+  color: $color-text-darken;
+}
+[class$="item-desc"]{
+  padding: 0 20px;
+}
+.delivery-item-desc{
+  padding: 15px 20px;
+}
+#novaposhta-logo{
+  height: 40px;
+}
+#justin-logo{
+  height: 40px;
+}
+#ukrposhta-logo{
+  height: 40px;
+}
+#people-carry-logo{
+  height: 35px;
+  display: flex;
+  align-self: center;
+}
+[id$="logo"]{
+  margin-top: 50px;
+}

@@ -28,3 +28,35 @@ $(document).ready(function(){
     waitForAnimate:false
   });
 });
+
+$(document).ready(function(){
+  $('.slider-preview-main').slick({
+    arrows:true,
+    dots:false,
+    infinite:true,
+    initialSlide:0,
+    speed:500,
+    autoplay:false,
+    draggable:false,
+    swipe:true,
+    touchMove:true,
+    waitForAnimate:false,
+    fade:false
+  });
+});
+
+$(document).ready(function(){
+  $('.slider-preview-add').slick({
+    arrows:false,
+    dots:false,
+    infinite:true,
+    initialSlide:0,
+    speed:500,
+    autoplay:false,
+    draggable:false,
+    touchMove:true,
+    waitForAnimate:false,
+    slidesToShow:4,
+    centerMode:false
+  });
+});

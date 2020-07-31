@@ -1,0 +1,21 @@
+section.payment-delivery
+  .container
+    include turn-back-btn
+    h2.payment-delivery-title Оплата
+    div.payment-container
+      include payment-mixin
+      +payment('payment-item')
+    h2.payment-delivery-title Доставка
+    div.delivery-container
+      -var items = [,,,,]
+      -var id = ['novaposhta-logo','justin-logo','ukrposhta-logo','people-carry-logo']
+      -var src = ['../images/info/icons/Nova_Poshta_2014_logo.png','../images/info/icons/justin.png','../images/info/icons/1200px-Ukrposhta-ua.png','../images/info/icons/people-carry-solid.svg']
+      -var title = ['Новая Почта','Почта Justin','Укрпочта','Самовывоз или курьерская доставка']
+      -var text = ['Отправка на следующий или в то же день после полной оплаты. Проверить статус отправления вы можете с помощью кода трекинга, который мы вышлем сообщением на телефон или E-mail.','Отправка на следующий или в то же день после полной оплаты. Проверить статус отправления вы можете с помощью кода трекинга, который мы вышлем сообщением на телефон или E-mail.','В большинстве случаев заграничные отправки.','При предварительной договоренности по времени, только Киев / Вишневое.']
+      include delivery-mixin
+      +delivery(items,'delivery-item',url,title,text)
+            
+
+        
+
+        

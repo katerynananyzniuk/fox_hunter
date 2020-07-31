@@ -1,16 +1,17 @@
-.button{
+.btn{
   display: inline-block;
   border-radius: 3px;
-  padding: 10px 22px 7px;
+  padding: 7px 12px;
   text-decoration: none;
-  &--default{
-    background-color: $color-background;
+  border: 1px solid $color-btn-border;
+  &-default{
+    background-color: $color-btn-background;
     transition: 0.3s;
     &:hover{
-      background-color: darken($color: $color-background, $amount: 7%);
+      background-color: darken($color: $color-btn-background, $amount: 7%);
     }
   }
-  &--text-uppercase{
+  &-text-uppercase{
     text-transform: uppercase;
   }
 }

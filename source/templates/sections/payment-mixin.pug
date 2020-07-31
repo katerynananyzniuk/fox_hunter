@@ -1,0 +1,25 @@
+mixin payment(className)
+  div(class=className)
+    div.icon
+      i(class="fontawesome-icon fas fa-list-ul")
+    div(class=className + '-desc')
+      div(class=className + '-title') Схемы работы
+      ul(class=className + '-list')
+        li(class=className + '-variants')
+          span.text-uppercase Основная модель
+          p(class=className + '-text') 20% оплаты при заказе и 80% перед отправкой
+        li(class=className + '-variants')
+          span.text-uppercase Индивидуальная модель
+          p(class=className + '-text') 60% оплаты при согласовании заказа и 40% перед отправкой
+        li(class=className + '-variants') 100% оплаты при наличии модели
+  div(class=className)
+    div.icon
+      i(class="fontawesome-icon far fa-credit-card")
+    div(class=className + '-desc')
+      div(class=className + '-title') На банковскую карту
+  div(class=className)
+    div.icon
+      i(class="fontawesome-icon fas fa-truck")
+    div(class=className + '-desc')
+      div(class=className + '-title') Наложный платеж Новой Почты
+      div(class=className + '-text') Комиcсия 20грн. + 2% от суммы заказа оплачивает покупатель.

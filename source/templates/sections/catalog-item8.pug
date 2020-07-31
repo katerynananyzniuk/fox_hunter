@@ -1,0 +1,13 @@
+section.catalog-item-section
+  -var items = [,] 
+  -var title = 'портмоне Leaf'
+  -var model = 'LeafD516blFH'
+  -var color = 'Черный'
+  -var material = 'Натуральная кожа (Crazy horse)'
+  -var size = '19х10x3см'
+  -var sections = '4 для купюр, 6 под карты, 1 для монет (на молнии), 1 для паспорта/авиабилета (со свободным торцом)'
+  -var slides = [,,,,,,] 
+  -var src = ["../images/info/catalog/purse_LeafD5164blFH.png","../images/info/catalog/purse_LeafD5163blFH.png","../images/info/catalog/purse_LeafD5162blFH.png","../images/info/catalog/purse_LeafD5161blFH.png","../images/info/catalog/purse_LeafD5160blFH.png","../images/info/catalog/purse_LeafD516blFH.png"]
+  -var price = '1300 грн.'
+  include catalog-item-mixin
+  +catalog-item(items,slides,'catalog-item',src,title,model,color,material,size,sections,price)

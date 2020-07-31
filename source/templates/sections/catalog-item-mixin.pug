@@ -1,0 +1,36 @@
+mixin catalog-item(items,slides,className,src,title,model,color,material,size,sections,price)
+  each item in items
+    div(class=className)=item
+      div(class=className + '-preview')
+        include turn-back-btn
+        div.slider-preview-main
+          mixin slider-preview(slides,className,src)
+            each slide,key in slides
+              div(class=className + '_item')=slide
+                img(
+                class=className + '_img'
+                alt="preview-main_img"
+                src=src[key]
+                )
+          +slider-preview(slides,'slider',src)
+        include catalog-item-preview-direction
+        div.slider-preview-add
+          mixin slider-preview(slides,className,src)
+            each slide,key in slides
+              div(class=className + '_item')=slide
+                img(
+                class=className + '_img'
+                src=src[key]
+                )
+          +slider-preview(slides,'slider',src)
+      div(class=className + '-desc')
+        h2(class=className + '_title')=title
+        div(class=className + '_prop')
+          div(class=className + '_model')= "Модель: " + model
+          div(class=className + '_color')= "Цвет: " + color
+          div(class=className + '_material')= "Материал: " + material
+          div(class=className + '_size')= "Размер: " + size
+          div(class=className + '_sections')= "Количество отделов: " + sections
+        div(class=className + '_price')=price
+        button(class="btn btn-default")
+          a(href="#") Заказать

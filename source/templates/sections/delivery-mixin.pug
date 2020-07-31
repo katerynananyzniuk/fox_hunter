@@ -1,0 +1,12 @@
+mixin delivery(items,className,url,title,text)
+  each item,key in items
+    div(class=className)=item
+      div.icon
+        img(
+        class=className + '-img'
+        id=id[key]
+        src=src[key]
+        )
+      div(class=className + '-desc')
+        div(class=className + '-title')=title[key]
+        div(class=className + '-text')=text[key]
