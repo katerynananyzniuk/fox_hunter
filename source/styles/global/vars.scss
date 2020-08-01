@@ -5,7 +5,11 @@ $ff-main-logoName: "montserrat-bold";
 
 //Backgrounds
 $color-background: #FBFBFB;
+$color-background-white: #FFFFFF;
 $color-background-dark: lighten(#505050,40%);
+
+//Shadows
+$color-shadow: lighten(#505050,20%);
 
 // Icons
 $color-icon-main: #505050;
