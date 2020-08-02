@@ -1,13 +1,14 @@
 section.catalog-item-section
-  -var items = [,] 
-  -var title = 'кошелек Shell'
-  -var model = 'ShellC1032brFH'
-  -var color = 'Черный'
-  -var material = 'Натуральная кожа (Crazy horse)'
-  -var size = '?х?см'
-  -var sections = '1 для купюр, 3 под карты, 1 для монет (на молнии)'
-  -var slides = [,,,,] 
-  -var src = ["../images/info/catalog/wallet_ShellC1032blFH.png","../images/info/catalog/wallet_ShellC103blFH.png","../images/info/catalog/wallet_ShellC1030blFH.png","../images/info/catalog/wallet_ShellC1031blFH.png"]
-  -var price = '1000 грн.'
-  include catalog-item-mixin
-  +catalog-item(items,slides,'catalog-item',src,title,model,color,material,size,sections,price)
+  .container
+    -var items = [,] 
+    -var title = 'кошелек Shell'
+    -var model = 'ShellC1032brFH'
+    -var color = 'Черный'
+    -var material = 'Натуральная кожа (Crazy horse)'
+    -var size = '?х?см'
+    -var sections = '1 для купюр, 3 под карты, 1 для монет (на молнии)'
+    -var slides = [,,,,] 
+    -var src = ["../images/info/catalog/wallet_ShellC1032blFH.png","../images/info/catalog/wallet_ShellC103blFH.png","../images/info/catalog/wallet_ShellC1030blFH.png","../images/info/catalog/wallet_ShellC1031blFH.png"]
+    -var price = '1000 грн.'
+    include catalog-item-mixin
+    +catalog-item(items,slides,'catalog-item',src,title,model,color,material,size,sections,price)

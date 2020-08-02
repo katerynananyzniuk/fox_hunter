@@ -1,7 +1,6 @@
-@import "../sections/turn-back-btn";
-@import "../global/common";
-
-
+.blog{
+  margin:50px auto auto;
+}
 div[class^="blog-item"]{    
   display: flex;
   flex-direction: row-reverse;
@@ -18,31 +17,33 @@ div[class^="blog-item"]:nth-child(2n){
   padding: 20px 20px;
   margin-bottom: 30px;
 }
-img[class$="img-photo"]{
+.cooperation,.guarantee,.product-care{
+  &-img-photo{
   width: 330px;
   height: 250px;
   padding: .25rem;
   background-color: $color-background-white;
   border-radius: .25rem;
-}
-div[class$="img-container"]{
- display: flex;
- flex-direction: column;
- justify-content: center;
-}
-div[class$="info"]{
+  }
+  &-img-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &-info{
   padding: 25px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: $color-text-darken;
-}
-h2[class$="title"]{
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-div[class$="text"]{
-  line-height: 1.5;
+  }
+  &-title{
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  &-text{
+    line-height: 1.5;
+  }
 }
 .product-care-list{
   list-style-type: disc;
@@ -50,5 +51,4 @@ div[class$="text"]{
 }
 .product-care-item{
   line-height: 1.5;
-
 }

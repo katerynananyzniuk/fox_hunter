@@ -1,14 +1,12 @@
 .payment-delivery{
-  max-width: 1000px;
-  margin: 40px auto;    
-  padding: 0 50px;
+  margin: 50px auto;    
   position: relative;
+  color: $color-text-darken;
   &-title{
     font-size: 28px;
     font-weight: 700;
     padding: 10px 55px;
-    margin-bottom: 10px;
-  color: $color-text-darken;
+    margin:0 auto 10px;
   }  
 }
 .icon{
@@ -20,6 +18,9 @@
   & .fontawesome-icon{
   color: $color-text-darken;
   }
+}
+.payment-container{
+  margin-bottom: 20px;
 }
 .payment-item{
   display: grid;

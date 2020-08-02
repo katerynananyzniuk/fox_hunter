@@ -1,13 +1,14 @@
 section.catalog-item-section
-  -var items = [,] 
-  -var title = 'кардхолдер Bit'
-  -var model = 'BitB102caFH'
-  -var color = 'Морковный'
-  -var material = 'Натуральная кожа (Crazy horse)'
-  -var size = '6.2х9.4см'
-  -var sections = '2 шт. под карты'
-  -var slides = [,,,] 
-  -var src = ["../images/info/catalog/cartholder_BitB102blFH.png","../images/info/catalog/cartholder_BitB1020blFH.png","../images/info/catalog/cartholder_BitB1021blFH.png"]
-  -var price = '250 грн.'
-  include catalog-item-mixin
-  +catalog-item(items,slides,'catalog-item',src,title,model,color,material,size,sections,price)
+  .container
+    -var items = [,] 
+    -var title = 'кардхолдер Bit'
+    -var model = 'BitB102caFH'
+    -var color = 'Морковный'
+    -var material = 'Натуральная кожа (Crazy horse)'
+    -var size = '6.2х9.4см'
+    -var sections = '2 шт. под карты'
+    -var slides = [,,,] 
+    -var src = ["../images/info/catalog/cartholder_BitB102blFH.png","../images/info/catalog/cartholder_BitB1020blFH.png","../images/info/catalog/cartholder_BitB1021blFH.png"]
+    -var price = '250 грн.'
+    include catalog-item-mixin
+    +catalog-item(items,slides,'catalog-item',src,title,model,color,material,size,sections,price)

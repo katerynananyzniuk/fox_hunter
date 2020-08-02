@@ -1,0 +1,24 @@
+.aboutUs{
+  color: $color-text-darken;
+  margin:50px auto;
+  & .fontawesome-icon{
+    color: $color-icon-darken;
+  }
+  & .fontawesome-icon:hover{
+    color: $color-icon-lighten;
+  }
+  &-title{
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  }
+  &-desc{
+  text-align: justify;
+  line-height: 1.7;
+  padding: 0 50px;
+  }
+  &-text{
+  display: inline;
+  }
+}

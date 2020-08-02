@@ -1,0 +1,40 @@
+.contacts{
+  display: flex;
+  margin:50px auto;
+  &-img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  &-title{
+    font-size: 28px;
+    font-family: $ff-main-bold;
+    text-transform: uppercase;
+    margin:40px auto;
+  }
+  &-desc{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 50px;
+  }
+  &-phone-number,&-email{
+    display: block;
+    line-height: 1.5;
+    font-weight: 700;
+    color: $color-text-darken;
+  }
+  &-text{
+    margin: 25px 0;    
+    width: 400px;
+    line-height: 1.5;
+  }
+  &-text-lighter{
+    font-size: 14px;
+    width: 360px;
+    display: inline-flex;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+}

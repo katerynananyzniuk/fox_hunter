@@ -1,13 +1,14 @@
 section.catalog-item-section
-  -var items = [,] 
-  -var title = 'несессер Keg'
-  -var model = 'KegE101blFH'
-  -var color = 'Черный'
-  -var material = 'Натуральная кожа (Crazy horse)'
-  -var size = '?х?см'
-  -var sections = '1 общий (на молнии)'
-  -var slides = [,,,] 
-  -var src = ["../images/info/catalog/necessar_KegE1010blFH.png","../images/info/catalog/necessar_KegE101blFH.png","../images/info/catalog/necessar_KegE1012blsFH.png"]
-  -var price = '1100 грн.'
-  include catalog-item-mixin
-  +catalog-item(items,slides,'catalog-item',src,title,model,color,material,size,sections,price)
+  .container
+    -var items = [,] 
+    -var title = 'несессер Keg'
+    -var model = 'KegE101blFH'
+    -var color = 'Черный'
+    -var material = 'Натуральная кожа (Crazy horse)'
+    -var size = '?х?см'
+    -var sections = '1 общий (на молнии)'
+    -var slides = [,,,] 
+    -var src = ["../images/info/catalog/necessar_KegE1010blFH.png","../images/info/catalog/necessar_KegE101blFH.png","../images/info/catalog/necessar_KegE1012blsFH.png"]
+    -var price = '1100 грн.'
+    include catalog-item-mixin
+    +catalog-item(items,slides,'catalog-item',src,title,model,color,material,size,sections,price)

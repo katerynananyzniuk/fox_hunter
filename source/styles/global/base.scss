@@ -3,11 +3,16 @@ body{
   font-family: $ff-main;
   font-size: 1rem;
   line-height: 1.2;
-  color: $color-text-dark;
+  color: $color-text-dark; 
+  margin: 0;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 html{
   box-sizing: border-box;
+  height: 100%;
 }
 
 *,*:before,*:after{
@@ -61,4 +66,10 @@ a{
 }
 .slick-list{
   overflow: hidden;
+}
+
+.fh {
+  font-family: $ff-main-logoName;
+  font-weight: 700;
+  font-size: 20px;
 }

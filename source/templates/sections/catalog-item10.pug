@@ -1,13 +1,14 @@
 section.catalog-item-section
-  -var items = [,] 
-  -var title = 'портмоне BigBoss'
-  -var model = 'BigBossF212blFH'
-  -var color = 'Черный'
-  -var material = 'Натуральная кожа (Crazy horse)'
-  -var size = '21x12х4см'
-  -var sections = '4 для купюр, 12 под карты, 1 для монет (на молнии)'
-  -var slides = [,,,,] 
-  -var src = ["../images/info/catalog/purse_BigBossF2123blFH.png","../images/info/catalog/purse_BigBossF2122blFH.png","../images/info/catalog/purse_BigBossF2121blFH.png","../images/info/catalog/purse_BigBossF212blFH.png"]
-  -var price = '2300 грн.'
-  include catalog-item-mixin
-  +catalog-item(items,slides,'catalog-item',src,title,model,color,material,size,sections,price)
+  .container
+    -var items = [,] 
+    -var title = 'портмоне BigBoss'
+    -var model = 'BigBossF212blFH'
+    -var color = 'Черный'
+    -var material = 'Натуральная кожа (Crazy horse)'
+    -var size = '21x12х4см'
+    -var sections = '4 для купюр, 12 под карты, 1 для монет (на молнии)'
+    -var slides = [,,,,] 
+    -var src = ["../images/info/catalog/purse_BigBossF2123blFH.png","../images/info/catalog/purse_BigBossF2122blFH.png","../images/info/catalog/purse_BigBossF2121blFH.png","../images/info/catalog/purse_BigBossF212blFH.png"]
+    -var price = '2300 грн.'
+    include catalog-item-mixin
+    +catalog-item(items,slides,'catalog-item',src,title,model,color,material,size,sections,price)

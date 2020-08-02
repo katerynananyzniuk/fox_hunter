@@ -1,4 +1,4 @@
-.footer{
+.footer-section{
   padding: 0 2% 10px 2%;  
   display: grid;
   grid-template-columns: 3fr 2fr 3fr 4fr;
@@ -20,11 +20,6 @@
   &:hover{
     color: $color-icon-darken;
   }
-}
-.fh {
-  font-family: $ff-main-logoName;
-  font-weight: 700;
-  font-size: 20px;
 }
 .year2020{
   font-weight:bold; 
