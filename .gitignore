@@ -1,5 +1,5 @@
 .vscode
-build
+build/
 node_modules
 npm-debug.log
 ###Windows templates
