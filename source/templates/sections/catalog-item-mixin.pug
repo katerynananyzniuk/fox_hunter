@@ -23,7 +23,7 @@ mixin catalog-item(items,slides,className,src,title,model,color,material,size,se
                 src=src[key]
                 )
           +slider-preview(slides,'slider',src)
-      div(class=className + '-desc')
+      div(class=className + '-description')
         h2(class=className + '_title')=title
         div(class=className + '_prop')
           div(class=className + '_model')= "Модель: " + model

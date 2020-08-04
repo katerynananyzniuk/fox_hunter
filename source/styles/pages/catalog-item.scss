@@ -9,7 +9,7 @@ section.catalog-item-section{
       min-width: 0;
       position: relative;
     }
-    &-desc{
+    &-description{
       padding: 6px 50px;
     }
     &_title{
@@ -17,6 +17,7 @@ section.catalog-item-section{
     }
     &_prop{
       padding: 20px 0;
+      line-height: 1.5;
     } 
     &_price{
       display: block;

@@ -9,6 +9,12 @@ section .catalog{
     display: flex;
     flex-direction: column;
     padding: 15px;
+      &:last-child .catalog-item_desc{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 20px 10px;
+      }
   }
   &-item_img{
     width: 100%;

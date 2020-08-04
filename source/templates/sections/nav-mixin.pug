@@ -3,6 +3,6 @@ mixin nav(items, className, active)
     each item,key in items
       li(class= className + '_item')
         if key === active
-          span(class=className + '_active')=item
+          a(class=className + '_active' href=links[key])=item
         else
           a(class=className + '_link' href=links[key])=item
