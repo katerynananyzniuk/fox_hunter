@@ -9,6 +9,8 @@ const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
+const ghpages = require('gh-pages');
+const path =require('path');
 
 /*------Server------*/
 gulp.task('server', function() {
@@ -120,3 +122,19 @@ gulp.task('js', function(){
     gulp.parallel('watch','server')
     )
 );
+
+/*------Ghpages------*/
+function deploy(cb){
+    ghpages.publish(path.join(process.cwd(), './build'), cb);
+}
+exports.deploy = deploy;
+
+/*------Build------*/
+// gulp.task('build', [
+//     'templates:compile',
+//     'styles:compile',
+//     'js',
+//     'slider',
+//     'sprite',
+//     'copy'
+// ]);
