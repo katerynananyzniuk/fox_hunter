@@ -12,9 +12,8 @@ $(document).ready(function(){
     waitForAnimate:false,
     slick:false
   });
-});
-
-$(document).ready(function(){
+};
+function(){
   $('.reviews').slick({
     dots:false,
     speed:1000,
@@ -27,9 +26,8 @@ $(document).ready(function(){
     touchMove:true,
     waitForAnimate:false
   });
-});
-
-$(document).ready(function(){
+};
+function(){
   $('.slider-preview-main').slick({
     arrows:true,
     dots:false,
@@ -43,9 +41,8 @@ $(document).ready(function(){
     waitForAnimate:false,
     fade:false
   });
-});
-
-$(document).ready(function(){
+};
+function(){
   $('.slider-preview-add').slick({
     arrows:false,
     dots:false,
